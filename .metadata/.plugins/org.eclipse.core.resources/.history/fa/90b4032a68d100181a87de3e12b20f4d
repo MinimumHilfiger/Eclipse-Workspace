@@ -1,0 +1,15 @@
+package v3_Package;
+import java.io.*;
+import java.net.*;
+
+public class Filter {
+
+	public static void main(String[] arg) throws Exception {
+		URL u = new URL("https://www.whitehouse.gov/");
+		FilterInputStream ins = (FilterInputStream) u.openStream();
+		InputStreamReader isr = new InputStreamReader(ins);
+		BufferedReader whiteHouse = new BufferedReader(isr);
+		System.out.println(whiteHouse.readLine());
+	}
+
+}
