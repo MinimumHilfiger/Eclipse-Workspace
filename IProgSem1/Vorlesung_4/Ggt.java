@@ -13,7 +13,7 @@ public class Ggt {
 		eingabe1 = iIO.promptAndRead("Bitte geben Sie die erste Zahl ein.");
 		eingabe2 = iIO.promptAndRead("Bitte geben Sie die zweite Zahl ein.");
 
-		while (!eingabe1.equals(ausnahme) && !eingabe1.equals(ausnahme)) {
+		while (!eingabe1.equals(ausnahme) && !eingabe2.equals(ausnahme)) {
 
 			zahlx = Integer.parseInt(eingabe1);
 			zahly = Integer.parseInt(eingabe2);

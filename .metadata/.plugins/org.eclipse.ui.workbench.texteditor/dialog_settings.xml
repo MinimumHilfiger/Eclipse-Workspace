@@ -7,6 +7,7 @@
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="import java.io.*;"/>
 			<item value="@"/>
 		</list>
 		<list key="replacehistory">
