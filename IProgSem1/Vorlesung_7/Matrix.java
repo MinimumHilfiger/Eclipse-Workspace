@@ -1,4 +1,4 @@
-
+//@author Philipp Hermann,Sruscht Abdallah
 public class Matrix {
 	int m, n;
 	double[][] qMatrix;
@@ -42,7 +42,8 @@ public class Matrix {
 
 			for (int x = 0; x < this.qMatrix.length; x++) {
 				for (int i = 0; i < this.qMatrix[0].length; i++) {
-					ergebnisA.setValue(x, i, this.getValue(x, i) + mat.getValue(x, i)); // Hier wird der Wert berechnet und eingesetzt
+					ergebnisA.setValue(x, i, this.getValue(x, i) + mat.getValue(x, i)); // Hier wird der Wert berechnet
+																						// und eingesetzt
 				}
 			}
 
@@ -58,7 +59,8 @@ public class Matrix {
 		if (this.qMatrix[0].length == mat.qMatrix.length) {
 			for (int x = 0; x < this.qMatrix.length; x++) {
 				for (int i = 0; i < this.qMatrix[0].length; i++) {
-					ergebnisM.setValue(x, i, nebenRechnung(x,i,mat) );	//Hier wird nur der Wert der Nebenrechnung an der richtigen Stelle eingesetzt
+					ergebnisM.setValue(x, i, nebenRechnung(x, i, mat)); // Hier wird nur der Wert der Nebenrechnung an
+																		// der richtigen Stelle eingesetzt
 				}
 			}
 		} else {
@@ -67,29 +69,33 @@ public class Matrix {
 		}
 		return ergebnisM;
 	}
+
 	public double nebenRechnung(int i, int j, Matrix mat) {
 		double ergebnisNR = 0;
-		for (int x = 0 ; x< this.qMatrix.length ; x++) {
-			ergebnisNR += this.getValue(i, x) * mat.getValue(x,j);
-			
+		for (int x = 0; x < this.qMatrix.length; x++) {
+			ergebnisNR += this.getValue(i, x) * mat.getValue(x, j);
+
 		}
 		return ergebnisNR;
 	}
-	
 
 	public static void main(String[] args) throws Exception {
+		Matrix M = new Matrix(4, 4);
+		Matrix Erg = new Matrix(4, 4);
+		M.setValue(0, 1, 1);
+		M.setValue(1, 2, 1);
+		M.setValue(2, 3, 1);
+		M.setValue(3, 0, 1);
+		M.setValue(3, 1, 2);
+		M.setValue(3, 2, -4);
+		M.setValue(3, 3, 3);
+		toString(M);
+		Erg = M;
+		for (int x = 0; x < 20; x++) {
+			Erg = Erg.multipy(M);
+			toString(Erg);
+		}
 
-		Matrix m1 = new Matrix(IO.readInt("Geben Sie die erste Zahl für das Array an."),
-				IO.readInt("Geben Sie die zweite Zahl für das Array an."));
-		toString(m1);
-		m1.setValue(0, 0, 1);
-		toString(m1);
-		toString(m1.add(m1));
-		toString(m1);
-		IO.writeln("" + m1.qMatrix.length); // Zeilenanzahl
-		IO.writeln("" + m1.qMatrix[0].length); // Spaltenanzahl
-		Matrix m2 = new Matrix(2, 2);
-		toString(m1.add(m2));
 	}
 
 }

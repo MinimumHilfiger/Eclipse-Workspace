@@ -9,5 +9,7 @@
 <fullyQualifiedTypeName name="java.io.BufferedReader"/>
 <fullyQualifiedTypeName name="java.io.PrintStream"/>
 <fullyQualifiedTypeName name="InteractiveIO"/>
+<fullyQualifiedTypeName name="java.math.BigInteger"/>
 <fullyQualifiedTypeName name="IO"/>
+<fullyQualifiedTypeName name="java.util.concurrent.ThreadLocalRandom"/>
 </qualifiedTypeNameHistroy>

@@ -20,4 +20,5 @@ class InteractiveIO {
 		System.out.println(s);
 		System.out.flush();
 	}
+	
 }

@@ -1,11 +1,9 @@
-import java.util.*;
+import java.util.*;//@author Philipp Hermann,Sruscht Abdallah
 
 public class EsreverLister {
 
 	public static void main(String[] args) throws Exception {
-		
-		
-		
+
 		boolean weiter = true;
 
 		ArrayList<String> liste = new ArrayList<String>();
@@ -36,7 +34,7 @@ public class EsreverLister {
 		}
 		Collections.reverse(liste);
 		System.out.println(liste);
-		
+
 	}
 
 	public static String invert(String s) {

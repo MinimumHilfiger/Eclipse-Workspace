@@ -4,7 +4,8 @@ public class Person {
 
 	public static void main(String[] args) throws Exception {
 		InteractiveIO iIO = new InteractiveIO();
-		
+		int c = 0;
+		int i = 4/c;
 		Person testPerson = new Person("Mustermann", "Max", "Kanalreiniger", "Gelb", "Hund");
 		iIO.write(testPerson.toString());
 		testPerson.gehtAusMit(testPerson);

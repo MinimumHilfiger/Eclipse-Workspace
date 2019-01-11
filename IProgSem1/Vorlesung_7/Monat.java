@@ -1,4 +1,4 @@
-import java.lang.String;
+import java.lang.String;//@author Philipp Hermann,Sruscht Abdallah
 
 public class Monat {
 	public enum Month {

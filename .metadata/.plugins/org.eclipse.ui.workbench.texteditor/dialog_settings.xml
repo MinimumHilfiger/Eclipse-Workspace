@@ -2,15 +2,22 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
+		<item value="main" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="spielFeldArray[spieler1.xKor][spieler1.yKor - 1].spielerAufFeld(spieler1.farbe);&#x09;//Methoden für Veränderung von den Feldern"/>
+			<item value="main"/>
+			<item value="ano"/>
+			<item value="Matrix"/>
 			<item value="import java.io.*;"/>
 			<item value="@"/>
 		</list>
 		<list key="replacehistory">
+			<item value="Matrix1"/>
+			<item value=""/>
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
