@@ -30,7 +30,7 @@ public class Feld {
 		return ThreadLocalRandom.current().nextInt(1, 100);
 	}
 
-	public void bruchErsteller() {			//Methode um einen zufällig generierten Bruch zu erstellen welcher nicht größer als 10 sein soll
+	public void bruchErsteller() {			//Methode um einen zufaellig generierten Bruch zu erstellen welcher nicht groesser als 10 sein soll
 		zaehler = zZGenerator();
 		nenner = zZGenerator();
 		while (zaehler / nenner > 10) {

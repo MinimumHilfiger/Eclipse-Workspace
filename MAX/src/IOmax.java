@@ -16,7 +16,7 @@ class IOmax {
 				writeAndFlush(s);
 				return br.readLine();
 			} catch (Exception e) {
-				writeln("Ungültige eingabe.");
+				writeln("Ungueltige eingabe.");
 			}
 		}
 

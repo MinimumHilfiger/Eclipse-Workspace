@@ -5,7 +5,6 @@ public class Spieler {
 	BigInteger zaehler, nenner;
 	public String farbe;
 	public boolean istDran;
-	public double punktzahl;
 	public boolean erstesMal = true;
 
 	public Spieler(String f, boolean istDran) {
