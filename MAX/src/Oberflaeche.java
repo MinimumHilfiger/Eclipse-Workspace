@@ -60,7 +60,7 @@ public class Oberflaeche {
 				} else {
 					System.out.print("  " + spielFeldArray[x][y].aktuelleSpielerFarbe + "   ");
 				}
-				if (x == 7)
+				if (x == 7)		//Nach 8 Brüchen wird eine neue Zeile begonnen
 					System.out.println();
 			}
 		}

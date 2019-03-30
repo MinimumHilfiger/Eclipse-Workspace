@@ -44,6 +44,7 @@ public class Feld {
 	}
 	public void spielerVonFeld() {				//Methode falls ein Spieler von einem Feld geht
 		besetzt = false;
+		aktuelleSpielerFarbe = null;
 		bruchErsteller();
 	}
 }
